@@ -1,0 +1,69 @@
+/* Hike Medical brand tokens — lifted from the Claude Design file's
+   colors_and_type system so this rebuild matches the original. */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap");
+
+:root {
+  --hm-sole-blue: #024ae3;
+  --hm-deep-navy: #002471;
+  --hm-midnight: #001442;
+  --hm-indigo-ink: #242259;
+  --hm-cyber-cyan: #00eeff;
+  --hm-bone-white: #faf7f0;
+  --hm-paper: #ffffff;
+  --hm-powder: #e6edfc;
+  --hm-ink: #151619;
+  --hm-slate: #515151;
+  --hm-stone: #6e6e6e;
+  --hm-steel: #737687;
+  --hm-mist: #dfdfdf;
+
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-card: 6px 6px 24px rgba(0, 0, 0, 0.08);
+
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--hm-bone-white);
+  color: var(--hm-ink);
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--hm-sole-blue);
+  outline-offset: 2px;
+}
